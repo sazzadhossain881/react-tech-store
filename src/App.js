@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Alert from './components/Alert';
 import Header from './components/Header';
 import PrivateRoute from './components/PrivateRoute';
+import ScrollButton from './components/ScrollButton';
 import About from './pages/About';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
@@ -18,6 +19,7 @@ const App = () => {
       <Router>
         <Header></Header>
         <Alert></Alert>
+        <ScrollButton></ScrollButton>
         <Switch>
           <Route path="/home">
             <Home></Home>
